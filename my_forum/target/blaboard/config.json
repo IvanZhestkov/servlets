@@ -1,0 +1,16 @@
+{
+  "siteInfo": {
+    "name": "Система форумов",
+    "author": "Жестков Иван",
+    "url": "http://blaboard.org",
+    "description": "Простая система ведения форумов",
+    "keywords": [
+      "форум",
+      "система",
+      "cms",
+      "html",
+      "css",
+      "java"
+    ]
+  }
+}

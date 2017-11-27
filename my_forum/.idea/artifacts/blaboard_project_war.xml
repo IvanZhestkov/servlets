@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="blaboard_project:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="blaboard.war">
+      <element id="artifact" artifact-name="blaboard_project:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="author" content="Ivan Zhestkov">
+    <link rel="stylesheet" href="css/screen.css">
+    <link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css"><!-- Bootstrap core CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymos"><!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:400,500,700&amp;amp;subset=cyrillic"><!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/3388f1cd1b.js"></script>
+  </head>
+  <body class="blaboard">
+    <div class="container-fluid">
+      <header class="row blaboard__header blaboard__header_blue">
+        <div class="col-xs-12">
+          <div class="clearfix">
+            <div class="float-xs-left"><a class="brand" href="/"><img class="brand__logo brand__logo_header" src="img/blab-logo.png" alt="BlaBoard"></a>
+              <form class="form-search" action="search" method="GET">
+                <input class="form-search__input form-search__input_header" type="text" name="key"><span class="form-search__icon form-search__icon_header"><i class="fa fa-search"></i></span>
+              </form>
+            </div>
+            <div class="float-xs-right">
+              <div class="user-block"><a class="button button_userblock user-block__profile user-block__profile_header" data-rel="popup" href="#myprofile"><img class="user-block__avatar" src="img/avatar.png"><span class="user-block__username">Ахметшин Азат</span></a>
+                <div class="js-popup-hidden popup" id="profile" data-role="popup">
+                  <div class="popup__header"><span class="popup__name">
+                       
+                      Ivan Zhestkov (usr562)</span><span class="popup__close"><i class="fa fa-close"></i></span></div>
+                  <ul class="menu">
+                    <li><a class="menu__elem menu__elem_popup" href="#page">
+                        <p class="elem-name">Мой профиль</p><span class="elem-desc">Мои личные данные</span></a></li>
+                    <li><a class="menu__elem menu__elem_popup" href="#page">
+                        <p class="elem-name">Настройки</p><span class="elem-desc">Редактирование личных данных</span></a></li>
+                    <li class="menu__divider"></li>
+                    <li><a class="menu__elem menu__elem_popup" href="#page">
+                        <p class="elem-name">Помощь</p><span class="elem-desc">Как пользоваться системой BlaBoard?</span></a></li>
+                    <li class="menu__divider"></li>
+                    <li><a class="menu__elem menu__elem_popup" href="#page">
+                        <p class="elem-name">Выйти</p><span class="elem-desc">Завершить сессию пользователя</span></a></li>
+                  </ul>
+                </div><a class="button button_userblock user-block__add user-block__add_header" href="#addto"><span class="button__icon button__icon_header"><i class="fa fa-plus"></i></span></a>
+                <div class="js-popup-hidden popup" id="add" data-role="popup">
+                  <div class="popup__header"><span class="popup__name">
+                       
+                      Создать</span><span class="popup__close"><i class="fa fa-close"></i></span></div>
+                  <ul class="menu">
+                    <li><a class="menu__elem menu__elem_popup" href="#page">
+                        <p class="elem-name">Создать тему</p><span class="elem-desc">Создание темы в нужном Вам разделе форума. Темы являются основной единицей форума и несут главную ценность - коммуницирование людей.</span></a></li>
+                    <li><a class="menu__elem menu__elem_popup" href="#page">
+                        <p class="elem-name">Создать комнату</p><span class="elem-desc">Создание комнаты на форуме. Комната очень похожа на тему, за исключением того, что комната не имеет своего раздела и доступ к ней осуществляется путём приглашений или одобрения её организатора.</span></a></li>
+                  </ul>
+                </div><a class="button button_userblock user-block__notification user-block__notification_header" href="#notification"><span class="button__icon button__icon_header"><i class="fa fa-bell"></i></span></a>
+                <div class="js-popup-hidden popup" id="notifications" data-role="popup">
+                  <div class="popup__header"><span class="popup__name">
+                       
+                      Уведомления</span><span class="popup__close"><i class="fa fa-close"></i></span></div>
+                  <ul class="notif">
+                    <li><a class="notif__elem notif__elem_popup" href="#page">
+                        <p class="elem-name">Вас процитировали<span class="notif-delete"><i class="fa fa-close"></i></span></p><span class="elem-desc">В a(href="#") Проблема с отображением подвала участник a.user-link(href="#") Ivanov Artem</span></a></li>
+                    <li><a class="notif__elem notif__elem_popup" href="#page">
+                        <p class="elem-name">Вас процитировали<span class="notif-delete"><i class="fa fa-close"></i></span></p><span class="elem-desc">
+                           
+                          В a(href="#") Проблема с отображением подвала участник a.user-link(href="#") Ivanov Artem</span></a></li>
+                    <li><a class="notif__elem notif__elem_popup" href="#page">
+                        <p class="elem-name">Вас процитировали<span class="notif-delete"><i class="fa fa-close"></i></span></p><span class="elem-desc">
+                           
+                          В a(href="#") Проблема с отображением подвала участник a.user-link(href="#") Ivanov Artem</span></a></li>
+                    <li><a class="notif__elem notif__elem_popup" href="#page">
+                        <p class="elem-name">Вас процитировали<span class="notif-delete"><i class="fa fa-close"></i></span></p><span class="elem-desc">
+                           
+                          В a(href="#") Проблема с отображением подвала участник a.user-link(href="#") Ivanov Artem</span></a></li>
+                    <li><a class="notif__elem notif__elem_popup" href="#page">
+                        <p class="elem-name">Вас процитировали<span class="notif-delete"><i class="fa fa-close"></i></span></p><span class="elem-desc">
+                           
+                          В a(href="#") Проблема с отображением подвала участник a.user-link(href="#") Ivanov Artem</span></a></li>
+                    <li><a class="notif__elem notif__elem_popup" href="#page">
+                        <p class="elem-name">Вас процитировали<span class="notif-delete"><i class="fa fa-close"></i></span></p><span class="elem-desc">
+                           
+                          В a(href="#") Проблема с отображением подвала участник a.user-link(href="#") Ivanov Artem</span></a></li>
+                    <li><a class="notif__elem notif__elem_popup" href="#page">
+                        <p class="elem-name">Вас процитировали<span class="notif-delete"><i class="fa fa-close"></i></span></p><span class="elem-desc">
+                           
+                          В a(href="#") Проблема с отображением подвала участник a.user-link(href="#") Ivanov Artem</span></a></li>
+                    <li><a class="notif__elem notif__elem_popup" href="#page">
+                        <p class="elem-name">Вас процитировали<span class="notif-delete"><i class="fa fa-close"></i></span></p><span class="elem-desc">
+                           
+                          В a(href="#") Проблема с отображением подвала участник a.user-link(href="#") Ivanov Artem</span></a></li>
+                    <li><a class="notif__elem notif__elem_popup" href="#page">
+                        <p class="elem-name">Вас процитировали<span class="notif-delete"><i class="fa fa-close"></i></span></p><span class="elem-desc">
+                           
+                          В a(href="#") Проблема с отображением подвала участник a.user-link(href="#") Ivanov Artem</span></a></li>
+                    <li><a class="notif__elem notif__elem_popup" href="#page">
+                        <p class="elem-name">Вас процитировали<span class="notif-delete"><i class="fa fa-close"></i></span></p><span class="elem-desc">
+                           
+                          В a(href="#") Проблема с отображением подвала участник a.user-link(href="#") Ivanov Artem</span></a></li>
+                    <li><a class="notif__elem notif__elem_popup" href="#page">
+                        <p class="elem-name">Вас процитировали<span class="notif-delete"><i class="fa fa-close"></i></span></p><span class="elem-desc">
+                           
+                          В a(href="#") Проблема с отображением подвала участник a.user-link(href="#") Ivanov Artem</span></a></li>
+                    <li><a class="notif__elem notif__elem_popup" href="#page">
+                        <p class="elem-name">Вас процитировали<span class="notif-delete"><i class="fa fa-close"></i></span></p><span class="elem-desc">
+                           
+                          В a(href="#") Проблема с отображением подвала участник a.user-link(href="#") Ivanov Artem</span></a></li>
+                    <li><a class="notif__elem notif__elem_popup" href="#page">
+                        <p class="elem-name">Вас процитировали<span class="notif-delete"><i class="fa fa-close"></i></span></p><span class="elem-desc">
+                           
+                          В a(href="#") Проблема с отображением подвала участник a.user-link(href="#") Ivanov Artem</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container forums">
+        <div class="forum">
+          <header class="forum__header">
+            <h2 class="forum__name">HTML форум</h2>
+          </header>
+          <div class="row">
+            <div class="col-xs-12 col-lg-4">
+              <div class="section">
+                <header class="clearfix section__header"><a class="float-xs-left section__link" href="#section">Начинающим</a><span class="float-xs-right section__count-of-message">Сообщ. 78394</span></header>
+                <div class="section__desc">Вопросы тех, кто только изучает веб-технологии.</div>
+                <ul class="subsections">
+                  <li class="subsections__li"><a class="subsections__elem" href="#subsection">Сделайте мне бесплатно</a></li>
+                  <li class="subsections__li"><a class="subsections__elem" href="#subsection">Макеты для верстки</a></li>
+                </ul>
+                <footer class="section__footer">
+                  <div class="lastmessage"><img class="lastmessage__avatar" src="img/last_message_avatar.png">
+                    <div class="lastmessage__author"><a class="lastmessage__link" href="#post">Не обновляется содержимое страницы при...</a><a class="lastmessage__author-link" href="#author">Автор: lexanderq212</a></div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+            <div class="col-xs-12 col-lg-4">
+              <div class="section">
+                <header class="clearfix section__header"><a class="float-xs-left section__link" href="#section">Сервер</a><span class="float-xs-right section__count-of-message">Сообщ. 178394</span></header>
+                <div class="section__desc">Обсуждение проблем верстки. CSS, HTML, XML, шаблонизаторы и прочее.</div>
+                <footer class="section__footer">
+                  <div class="lastmessage"><img class="lastmessage__avatar" src="img/last_message_avatar.png">
+                    <div class="lastmessage__author"><a class="lastmessage__link" href="#post">Не обновляется содержимое страницы при...</a><a class="lastmessage__author-link" href="#author">Автор: lexanderq212</a></div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+            <div class="col-xs-12 col-lg-4">
+              <div class="section">
+                <header class="clearfix section__header"><a class="float-xs-left section__link" href="#section">Серверные технологии</a><span class="float-xs-right section__count-of-message">Сообщ. 178394</span></header>
+                <div class="section__desc">Обсуждение проблем верстки. CSS, HTML, XML, шаблонизаторы и прочее.</div>
+                <footer class="section__footer">
+                  <div class="lastmessage"><img class="lastmessage__avatar" src="img/last_message_avatar.png">
+                    <div class="lastmessage__author"><a class="lastmessage__link" href="#post">Не обновляется содержимое страницы при...</a><a class="lastmessage__author-link" href="#author">Автор: lexanderq212</a></div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+            <div class="clearfix visible-lg"></div>
+            <div class="col-xs-12 col-lg-4">
+              <div class="section">
+                <header class="clearfix section__header"><a class="float-xs-left section__link" href="#section">Начинающим</a><span class="float-xs-right section__count-of-message">Сообщ. 78394</span></header>
+                <div class="section__desc">Вопросы тех, кто только изучает веб-технологии.</div>
+                <ul class="subsections">
+                  <li class="subsections__li"><a class="subsections__elem" href="#subsection">Сделайте мне бесплатно</a></li>
+                  <li class="subsections__li"><a class="subsections__elem" href="#subsection">Макеты для верстки</a></li>
+                </ul>
+                <footer class="section__footer">
+                  <div class="lastmessage"><img class="lastmessage__avatar" src="img/last_message_avatar.png">
+                    <div class="lastmessage__author"><a class="lastmessage__link" href="#post">Не обновляется содержимое страницы при...</a><a class="lastmessage__author-link" href="#author">Автор: lexanderq212</a></div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+            <div class="col-xs-12 col-lg-4">
+              <div class="section">
+                <header class="clearfix section__header"><a class="float-xs-left section__link" href="#section">Серверные технологии</a><span class="float-xs-right section__count-of-message">Сообщ. 178394</span></header>
+                <div class="section__desc">Обсуждение проблем верстки. CSS, HTML, XML, шаблонизаторы и прочее.</div>
+                <footer class="section__footer">
+                  <div class="lastmessage"><img class="lastmessage__avatar" src="img/last_message_avatar.png">
+                    <div class="lastmessage__author"><a class="lastmessage__link" href="#post">Не обновляется содержимое страницы при...</a><a class="lastmessage__author-link" href="#author">Автор: lexanderq212</a></div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+            <div class="col-xs-12 col-lg-4">
+              <div class="section">
+                <header class="clearfix section__header"><a class="float-xs-left section__link" href="#section">Серверные технологии</a><span class="float-xs-right section__count-of-message">Сообщ. 178394</span></header>
+                <div class="section__desc">Обсуждение проблем верстки. CSS, HTML, XML, шаблонизаторы и прочее.</div>
+                <footer class="section__footer">
+                  <div class="lastmessage"><img class="lastmessage__avatar" src="img/last_message_avatar.png">
+                    <div class="lastmessage__author"><a class="lastmessage__link" href="#post">Не обновляется содержимое страницы при...</a><a class="lastmessage__author-link" href="#author">Автор: lexanderq212</a></div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="forum">
+          <header class="forum__header">
+            <h2 class="forum__name">HTML форум</h2>
+          </header>
+          <div class="row">
+            <div class="col-xs-12 col-lg-4">
+              <div class="section">
+                <header class="clearfix section__header"><a class="float-xs-left section__link" href="#section">Начинающим</a><span class="float-xs-right section__count-of-message">Сообщ. 78394</span></header>
+                <div class="section__desc">Вопросы тех, кто только изучает веб-технологии.</div>
+                <ul class="subsections">
+                  <li class="subsections__li"><a class="subsections__elem" href="#subsection">Сделайте мне бесплатно</a></li>
+                  <li class="subsections__li"><a class="subsections__elem" href="#subsection">Макеты для верстки</a></li>
+                </ul>
+                <footer class="section__footer">
+                  <div class="lastmessage"><img class="lastmessage__avatar" src="img/last_message_avatar.png">
+                    <div class="lastmessage__author"><a class="lastmessage__link" href="#post">Не обновляется содержимое страницы при...</a><a class="lastmessage__author-link" href="#author">Автор: lexanderq212</a></div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+            <div class="col-xs-12 col-lg-4">
+              <div class="section">
+                <header class="clearfix section__header"><a class="float-xs-left section__link" href="#section">Серверные технологии</a><span class="float-xs-right section__count-of-message">Сообщ. 178394</span></header>
+                <div class="section__desc">Обсуждение проблем верстки. CSS, HTML, XML, шаблонизаторы и прочее.</div>
+                <footer class="section__footer">
+                  <div class="lastmessage"><img class="lastmessage__avatar" src="img/last_message_avatar.png">
+                    <div class="lastmessage__author"><a class="lastmessage__link" href="#post">Не обновляется содержимое страницы при...</a><a class="lastmessage__author-link" href="#author">Автор: lexanderq212</a></div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+            <div class="col-xs-12 col-lg-4">
+              <div class="section">
+                <header class="clearfix section__header"><a class="float-xs-left section__link" href="#section">Серверные технологии</a><span class="float-xs-right section__count-of-message">Сообщ. 178394</span></header>
+                <div class="section__desc">Обсуждение проблем верстки. CSS, HTML, XML, шаблонизаторы и прочее.</div>
+                <footer class="section__footer">
+                  <div class="lastmessage"><img class="lastmessage__avatar" src="img/last_message_avatar.png">
+                    <div class="lastmessage__author"><a class="lastmessage__link" href="#post">Не обновляется содержимое страницы при...</a><a class="lastmessage__author-link" href="#author">Автор: lexanderq212</a></div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+            <div class="clearfix visible-lg"></div>
+            <div class="col-xs-12 col-lg-4">
+              <div class="section">
+                <header class="clearfix section__header"><a class="float-xs-left section__link" href="#section">Начинающим</a><span class="float-xs-right section__count-of-message">Сообщ. 78394</span></header>
+                <div class="section__desc">Вопросы тех, кто только изучает веб-технологии.</div>
+                <ul class="subsections">
+                  <li class="subsections__li"><a class="subsections__elem" href="#subsection">Сделайте мне бесплатно</a></li>
+                  <li class="subsections__li"><a class="subsections__elem" href="#subsection">Макеты для верстки</a></li>
+                </ul>
+                <footer class="section__footer">
+                  <div class="lastmessage"><img class="lastmessage__avatar" src="img/last_message_avatar.png">
+                    <div class="lastmessage__author"><a class="lastmessage__link" href="#post">Не обновляется содержимое страницы при...</a><a class="lastmessage__author-link" href="#author">Автор: lexanderq212</a></div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+            <div class="col-xs-12 col-lg-4">
+              <div class="section">
+                <header class="clearfix section__header"><a class="float-xs-left section__link" href="#section">Серверные технологии</a><span class="float-xs-right section__count-of-message">Сообщ. 178394</span></header>
+                <div class="section__desc">Обсуждение проблем верстки. CSS, HTML, XML, шаблонизаторы и прочее.</div>
+                <footer class="section__footer">
+                  <div class="lastmessage"><img class="lastmessage__avatar" src="img/last_message_avatar.png">
+                    <div class="lastmessage__author"><a class="lastmessage__link" href="#post">Не обновляется содержимое страницы при...</a><a class="lastmessage__author-link" href="#author">Автор: lexanderq212</a></div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+            <div class="col-xs-12 col-lg-4">
+              <div class="section">
+                <header class="clearfix section__header"><a class="float-xs-left section__link" href="#section">Серверные технологии</a><span class="float-xs-right section__count-of-message">Сообщ. 178394</span></header>
+                <div class="section__desc">Обсуждение проблем верстки. CSS, HTML, XML, шаблонизаторы и прочее.</div>
+                <footer class="section__footer">
+                  <div class="lastmessage"><img class="lastmessage__avatar" src="img/last_message_avatar.png">
+                    <div class="lastmessage__author"><a class="lastmessage__link" href="#post">Не обновляется содержимое страницы при...</a><a class="lastmessage__author-link" href="#author">Автор: lexanderq212</a></div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="container">
+        <footer class="clearfix footer">
+          <p class="float-xs-left footer__stat">Статистика</p>
+          <div class="float-xs-right">
+            <ul class="counts">
+              <li class="counts__elem"><span class="counts__elem-name">Соообщений:</span><span class="counts__elem-count">15667</span></li>
+              <li class="counts__elem"><span class="counts__elem-name">Тем:</span><span class="counts__elem-count">6667</span></li>
+              <li class="counts__elem"><span class="counts__elem-name">Пользователей:</span><span class="counts__elem-count">180667</span></li>
+              <li class="counts__elem"><span class="counts__elem-name">Новый пользователь:</span><span class="counts__elem-count"> <a class="counts__elem-link" href="#user">MarcusSA</a></span></li>
+            </ul>
+          </div>
+        </footer>
+        <div class="clearfix"></div>
+        <p class="copyright">Работает на <a href="/">BlaBoard 1.0</a></p>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

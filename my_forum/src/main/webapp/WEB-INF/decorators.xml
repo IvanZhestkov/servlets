@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<decorators defaultdir="/decorators">
+    <excludes>
+        <pattern>/js/*</pattern>
+        <pattern>/css/*</pattern>
+        <pattern>/img/*</pattern>
+        <pattern>/META-INF/*</pattern>
+        <pattern>/404.jsp</pattern>
+        <pattern>/checkusername</pattern>
+        <pattern>/checkemail</pattern>
+        <pattern>/admin</pattern>
+        <pattern>/admin/*</pattern>
+        <pattern>/moderate</pattern>
+        <pattern>/moderate/*</pattern>
+    </excludes>
+
+    <decorator name="servletOutputDecorator" page="dec.jsp">
+        <pattern>/*</pattern>
+        <pattern>/</pattern>
+        <pattern>/prelogin</pattern>
+        <pattern>/simple</pattern>
+        <pattern>/error.jsp</pattern>
+    </decorator>
+
+    <decorator name="servletWithoutFooter" page="decWithoutFooter.jsp">
+        <pattern>/create_topic</pattern>
+        <pattern>/search</pattern>
+        <pattern>/topic</pattern>
+        <pattern>/login.jsp</pattern>
+        <pattern>/login</pattern>
+        <pattern>/register</pattern>
+        <pattern>/user.jsp</pattern>
+        <pattern>/user</pattern>
+        <pattern>/user/*</pattern>
+        <pattern>/settings.jsp</pattern>
+        <pattern>/settings</pattern>
+    </decorator>
+
+    <decorator name="jspOutputDecorator" page="dec.jsp">
+        <pattern>/*.jsp</pattern>
+    </decorator>
+</decorators>
